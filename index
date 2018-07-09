@@ -30,6 +30,7 @@
           .text(value.name)); 
       });
     };
+
     var loadBoards = function() {
       //Get the users boards
       Trello.get(
@@ -45,6 +46,7 @@
         $('#labels').append(label)
       });
     };
+
     $('#boards').change(function() {
       var boardId = $("option:selected", this).val();
       $('#labels').empty();
